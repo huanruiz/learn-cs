@@ -1,8 +1,8 @@
 # 1_Overview
-第一节课几乎没有讲任何的知识, 只是单纯地介绍了这节课, 老师是Bryant和O’Hallaron, CSAPP原书的作者. 这门课的前置要求是会C语言, 教材有两本, 一是**Computer Systems: A Programmer’s Perspec4ve, Third Edi7on (CS:APP3e), Pearson, 2016**, 二是讲C语言的书**The C Programming Language, Second Edition, Prence Hall, 1988**. 目前网上找得到的版本是FALL 2015的课, 各个视频平台都有, CMU也把这门课放在了[panopto](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22), 可以体验上网课的感觉. 这门课的课件都在*参考1*的连接, lab在*参考2*的链接.
+第一节课几乎没有讲任何的知识, 只是单纯地介绍了这节课, 老师是Bryant和O’Hallaron, CSAPP原书的作者. 这门课的前置要求是会C语言, 教材有两本, 一是**Computer Systems: A Programmer’s Perspective, Third Edition (CS:APP3e), Pearson, 2016**, 二是讲C语言的书**The C Programming Language, Second Edition, Prence Hall, 1988**. 目前网上找得到的版本是FALL 2015的课, 各个视频平台都有, CMU也把这门课放在了[panopto](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22), 可以体验上网课的感觉. 这门课的课件都在*参考1*的连接, lab在*参考2*的链接.
 
 这门课的中心是一句话: **Abstraction Is Good But Don’t Forget Reality**, 当我们用软件去抽象现实中的东西时, 不能不考虑现实中的限制. 课上举了几个例子.
-1. Ints are not Integers, Floats are not Reals. 课上用lldb举了个例子, 我们会发现50000的频繁计算出来了一个神奇的数字, 乘法结合律也错了. 而这些结果并不是随机的数字.
+1. Ints are not Integers, Floats are not Reals. 课上用lldb举了个例子, 我们会发现50000的平方计算出来了一个神奇的数字, 乘法结合律也错了. 而这些结果并不是随机的数字.
 ```
 (lldb) print 40000 * 40000
 (int) $0 = 1600000000
