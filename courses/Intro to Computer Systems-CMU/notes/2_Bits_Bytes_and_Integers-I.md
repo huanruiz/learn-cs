@@ -1,5 +1,5 @@
-# 2_Bits_Bytes_and_Integers
-首先要了解位运算的一些常识如与, 或, 非, 异或的运算, 他们的符号分别为`&, |, ~, ^`, 以及2进制, 16进制, 10进制的转换. 在C语言中, 所有的整型都适用位运算. 对于这些整型的表示, unsigned integer为$\sum^{w-1}_{i=0}x_{i}\cdot 2^{i}$. 而signed integer为Two’s Complement: $-x_{w-1}\cdot 2^{w-1} + \sum^{w-2}_{i=0}x_{i}\cdot 2^{i}$, $x_{i}$表示某一位. 在这里不要被公式迷惑了, 实际上, unsigned整型就是直接用10进制转换的2进制存储, 而signed整型用**2的补码存储**, 且首位的含义是是否负号的标志位. 这种区分unsigned和signed的编码形式在其他语言不一定能见到. 比如Java中的int, 就默认是32位的signed编码. 
+# 2_Bits_Bytes_and_Integers-II
+首先要了解位运算的一些常识如与, 或, 非, 异或的运算, 他们的符号分别为`&, |, ~, ^`, 以及2进制, 16进制, 10进制的转换. 在C语言中, 所有的整型都适用位运算. 对于这些整型的表示, unsigned integer为$\sum^{w-1}_{i=0}x_{i}\cdot 2^{i}$. 而signed integer为Two’s Complement: $-x_{w-1}\cdot 2^{w-1} + \sum^{w-2}_{i=0}x_{i}\cdot 2^{i}$, $x_{i}$表示某一位. 在这里不要被公式迷惑了, 实际上, unsigned整型就是直接用10进制转换的2进制存储, 而signed整型用**2的补码存储**, 且首位为是否负号的标志位. 这种区分unsigned和signed的编码形式在其他语言不一定能见到. 比如Java中的int, 就默认是32位的signed编码. 
 
 举个例子: 我们知道当unsigned与signed做比较时, signed会自动转为unsigned, 这会造成神奇的现象, 比如`-1`与`0U`比较的结果是大于, 因为`-1`的编码为11111, 而0U是00000(假设用5位的编码).
 
