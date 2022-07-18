@@ -7,5 +7,5 @@ graph LR;
     C[C Language]-->CSAPP[CSAPP];
 
 click C "https://wangdoc.com/clang/" "C语言教程"
-click CSAPP "./courses/csapp" "15-213"
+click CSAPP "https://github.com/huanruiz/learn-cs/tree/main/courses/csapp/" "15-213"
 ```
